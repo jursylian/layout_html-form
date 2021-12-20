@@ -3,5 +3,16 @@
 }
 
 .fieldset {
-  margin: 20px 0;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  display: block;
+}
+
+.clearMarginBottom {
+  margin-bottom: 0;
+}
+
+.clearPadding {
+  padding-right: 0;
+  padding-left: 0;
 }
