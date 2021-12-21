@@ -14,7 +14,8 @@
     <form
       action="https://mate-academy-form-lesson.herokuapp.com/create-application"
       method="post"
-      onsubmit="onSubmit()">
+      onsubmit="onSubmit()"
+    >
       <fieldset class="fieldset">
         <legend>Personal information</legend>
         <div>
@@ -22,18 +23,20 @@
           <input
             type="text"
             id="surname"
-            autocomplete="off">
+            autocomplete="off"
+          >
         </div>
 
         <div class="form-field">
           <label for="personName">Name:</label>
-          <input type="text" id="personName">
+          <input type="text" name="name" id="personName">
         </div>
 
         <div class="form-field">
           <label for="age">How old are You?</label>
           <input
             type="number"
+            name="personAge"
             id="age"
             value="12"
             min="12"
@@ -53,7 +56,12 @@
 
         <div class="form-field clearMarginBottom">
           <label for="agreement">I accept the term of the agreement</label>
-          <input type="checkbox" id="agreement" required>
+          <input
+            type="checkbox"
+            name="check"
+            id="agreement"
+            required
+          >
         </div>
       </fieldset>
 
@@ -63,6 +71,7 @@
           <label for="email">E-mail:</label>
           <input
             class="clearPadding"
+            name="personEmail"
             type="email"
             id="email"
             placeholder="email@example.com"
@@ -74,6 +83,7 @@
           <label for="password">Password:</label>
           <input
             type="password"
+            name="password"
             id="password"
             required
             minlength="6"
